@@ -1,0 +1,26 @@
+.skills {
+  margin: 3rem 0;
+  &__card {
+    width: 15rem;
+    padding-bottom: 2rem;
+    &__header {
+      text-align: center;
+      font-size: $font-size-md;
+    }
+    &__icon {
+      padding-top: 1rem;
+      text-align: center;
+      font-size: $icon-size-lg;
+    }
+    &__body {
+      text-align: center;
+      font-size: $font-size-normal;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

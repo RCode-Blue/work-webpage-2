@@ -1,0 +1,32 @@
+@import "../abstracts/variables";
+
+a,
+img {
+  margin: auto;
+  display: block;
+}
+
+a {
+  color: $color-lightblue-1;
+}
+
+.header {
+  padding: 1rem 0;
+  background-color: $color-blue-4;
+}
+
+.menu {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__icon {
+      color: $color-lightblue-1;
+      text-align: center;
+      font-size: $icon-size-md;
+    }
+    a {
+      font-size: $font-size-sm;
+    }
+  }
+}

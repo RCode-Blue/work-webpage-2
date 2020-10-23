@@ -1,0 +1,20 @@
+// @import "../abstracts/variables";
+
+body {
+  background-color: $color-lightblue-1;
+  font-family: $font-primary;
+}
+
+.wrapper1 {
+  width: 100vw;
+  background-color: $color-lightblue-2;
+}
+
+.wrapper2 {
+  background-color: $color-lightblue-3;
+}
+
+.wrapper3 {
+  width: 80vw;
+  margin: auto;
+}
