@@ -1,7 +1,9 @@
 .skills {
   margin: 3rem auto;
   &__card {
+    height: 21rem;
     width: 15rem;
+    min-width: 11rem;
     padding-bottom: 2rem;
     margin: auto;
     &__header {
@@ -19,10 +21,7 @@
       font-size: $font-size-normal;
     }
   }
-  // &__more-less {
-  //   padding-bottom: 2rem;
-  //   font-size: 1rem;
-  // }
+
   ul {
     list-style-type: none;
     margin: 0;

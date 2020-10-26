@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 /*
-0      - 600px  : Mobile phone
-600px  - 900px  : Tablet
-900px  - 1200px : Tablet landscape
-1200px - 1800px : [Normal styles]
-1800px+         : Big desktop 
+0 - 600px  : Mobile phone
 */
 html {
   scroll-behavior: smooth; }
@@ -96,7 +92,9 @@ a {
 .skills {
   margin: 3rem auto; }
   .skills__card {
+    height: 21rem;
     width: 15rem;
+    min-width: 11rem;
     padding-bottom: 2rem;
     margin: auto; }
     .skills__card__header {
@@ -130,7 +128,8 @@ a {
     font-size: 2rem; }
 
 .project {
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  padding-bottom: 2rem; }
   .project__border {
     height: 1px;
     background: linear-gradient(90deg, rgba(7, 8, 9, 0) 10%, #070809 50%, rgba(7, 8, 9, 0) 90%); }
@@ -167,3 +166,20 @@ a {
 
 .dots:hover {
   cursor: pointer; }
+
+.contact {
+  margin-bottom: 2rem;
+  color: #082042; }
+  .contact a:link {
+    color: #082042; }
+  .contact a:visited {
+    color: #082042; }
+  .contact a:hover {
+    text-decoration: none; }
+  .contact__heading {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center; }
+  .contact__content {
+    font-size: 1.1rem;
+    margin: auto; }
