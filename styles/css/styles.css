@@ -14,7 +14,7 @@ body {
   background-color: #f0fbff; }
 
 .wrapper2 {
-  background-color: #dde8f3; }
+  background-color: #496b8e; }
 
 .wrapper3 {
   width: 80vw;
@@ -86,7 +86,7 @@ a {
   width: 80vw;
   margin: auto;
   padding: 3rem;
-  color: #082042;
+  color: #fcfadd;
   font-size: 1.1rem; }
 
 .skills {
@@ -168,18 +168,20 @@ a {
   cursor: pointer; }
 
 .contact {
-  margin-bottom: 2rem;
-  color: #082042; }
+  padding-bottom: 2rem;
+  color: #fcfadd; }
   .contact a:link {
-    color: #082042; }
+    color: #fcfadd; }
   .contact a:visited {
-    color: #082042; }
+    color: #fcfadd; }
   .contact a:hover {
     text-decoration: none; }
   .contact__heading {
     font-size: 2rem;
     padding: 1rem;
-    text-align: center; }
+    text-align: center;
+    color: #fcfadd; }
   .contact__content {
+    color: #fcfadd;
     font-size: 1.1rem;
     margin: auto; }

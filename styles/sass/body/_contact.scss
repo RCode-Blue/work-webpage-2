@@ -1,26 +1,28 @@
 .contact {
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+
   a:link {
-    color: $color-blue-4;
+    color: $color-yellow-1;
   }
 
   a:visited {
-    color: $color-blue-4;
+    color: $color-yellow-1;
   }
 
   a:hover {
     text-decoration: none;
   }
 
-  color: $color-blue-4;
+  color: $color-yellow-1;
 
   &__heading {
     font-size: $font-size-lg;
     padding: 1rem;
     text-align: center;
+    color: $color-yellow-1;
   }
   &__content {
-    // margin: 3rem auto;
+    color: $color-yellow-1;
     font-size: $font-size-normal;
 
     margin: auto;
