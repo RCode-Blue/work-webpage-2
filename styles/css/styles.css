@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+/*
+0      - 600px  : Mobile phone
+600px  - 900px  : Tablet
+900px  - 1200px : Tablet landscape
+1200px - 1800px : [Normal styles]
+1800px+         : Big desktop 
+*/
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #f5fafc;
   font-family: "Didact Gothic", sans-serif; }
@@ -35,7 +45,7 @@ a {
     text-align: center;
     font-size: 1.8rem; }
   .menu__item a {
-    font-size: 0.8rem; }
+    font-size: 0.9rem; }
 
 .banner {
   width: 100%;
@@ -57,9 +67,15 @@ a {
 
 .banner-text-1 {
   font-size: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .banner-text-1 {
+      font-size: 8rem; } }
 
 .banner-text-2 {
   font-size: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .banner-text-2 {
+      font-size: 3.5rem; } }
 
 .fade-in {
   animation: fadeIn ease 20s; }
@@ -75,15 +91,17 @@ a {
   margin: auto;
   padding: 3rem;
   color: #082042;
-  font-size: 1.2rem; }
+  font-size: 1.1rem; }
 
 .skills {
-  margin: 3rem 0; }
+  margin: 3rem auto; }
   .skills__card {
     width: 15rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    margin: auto; }
     .skills__card__header {
       text-align: center;
+      padding-bottom: 1rem;
       font-size: 1.7rem; }
     .skills__card__icon {
       padding-top: 1rem;
@@ -91,14 +109,21 @@ a {
       font-size: 3rem; }
     .skills__card__body {
       text-align: center;
-      font-size: 1.2rem; }
+      font-size: 1.1rem; }
   .skills ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
 
 .portfolio {
-  background-color: #fcfadd; }
+  background-color: #fcfadd;
+  color: #082042; }
+  .portfolio a:link {
+    color: #082042; }
+  .portfolio a:visited {
+    color: #082042; }
+  .portfolio a:hover {
+    text-decoration: none; }
   .portfolio__heading {
     padding: 1rem;
     text-align: center;
@@ -106,12 +131,14 @@ a {
 
 .project {
   padding: 1rem 0; }
+  .project__border {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(7, 8, 9, 0) 10%, #070809 50%, rgba(7, 8, 9, 0) 90%); }
   .project__title {
     padding: 1rem;
     margin: 1rem 0;
     text-align: center;
-    font-size: 1.2rem;
-    background-color: #f2f0d6; }
+    font-size: 1.7rem; }
   .project__img {
     display: flex;
     flex-direction: column; }
@@ -120,9 +147,23 @@ a {
       height: auto;
       object-fit: cover; }
   .project__txt {
-    padding: 2rem 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    font-size: 1.1rem; }
     .project__txt__links {
-      text-align: center; }
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem; }
+      .project__txt__links div div:not(:last-child) {
+        border-right: 1.5px solid black; }
+      .project__txt__links__item > i {
+        margin-right: 0.2rem; }
+
+.dots {
+  font-size: 1rem;
+  color: #003f88; }
+
+.dots:hover {
+  cursor: pointer; }

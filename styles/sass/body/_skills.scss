@@ -1,10 +1,12 @@
 .skills {
-  margin: 3rem 0;
+  margin: 3rem auto;
   &__card {
     width: 15rem;
     padding-bottom: 2rem;
+    margin: auto;
     &__header {
       text-align: center;
+      padding-bottom: 1rem;
       font-size: $font-size-md;
     }
     &__icon {
@@ -17,7 +19,10 @@
       font-size: $font-size-normal;
     }
   }
-
+  // &__more-less {
+  //   padding-bottom: 2rem;
+  //   font-size: 1rem;
+  // }
   ul {
     list-style-type: none;
     margin: 0;

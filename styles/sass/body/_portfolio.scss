@@ -1,5 +1,19 @@
 .portfolio {
   background-color: $color-yellow-1;
+  color: $color-blue-4;
+
+  a:link {
+    color: $color-blue-4;
+  }
+
+  a:visited {
+    color: $color-blue-4;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
   &__heading {
     padding: 1rem;
     text-align: center;
@@ -9,12 +23,21 @@
 }
 .project {
   padding: 1rem 0;
+  &__border {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba($color-gray-2, 0) 10%,
+      rgba($color-gray-2, 1) 50%,
+      rgba($color-gray-2, 0) 90%
+    );
+  }
   &__title {
     padding: 1rem;
     margin: 1rem 0;
     text-align: center;
-    font-size: 1.2rem;
-    background-color: $color-yellow-2;
+    font-size: $font-size-md;
+    // background-color: $color-yellow-2;
   }
   &__img {
     // padding: 0.5rem;
@@ -27,13 +50,37 @@
     }
   }
   &__txt {
-    padding: 2rem 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: $font-size-normal;
 
     &__links {
+      margin-top: 2rem;
       text-align: center;
+      font-size: $font-size-sm;
+
+      div {
+        div:not(:last-child) {
+          border-right: 1.5px solid black;
+        }
+      }
+
+      &__item {
+        > i {
+          margin-right: 0.2rem;
+        }
+        a {
+        }
+      }
     }
   }
+}
+.dots {
+  font-size: 1rem;
+  color: $color-blue-1;
+}
+.dots:hover {
+  cursor: pointer;
 }

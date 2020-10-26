@@ -33,10 +33,16 @@
 
 .banner-text-1 {
   font-size: $font-size-banner-1;
+  @include respond(phone) {
+    font-size: $font-size-banner-1-phone;
+  }
 }
 
 .banner-text-2 {
   font-size: $font-size-banner-2;
+  @include respond(phone) {
+    font-size: $font-size-banner-2-phone;
+  }
 }
 
 .fade-in {

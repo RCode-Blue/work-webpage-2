@@ -19,54 +19,55 @@
 
     <link rel="stylesheet" href="styles/css/styles.css" />
     <script defer src="./vendors/icons/fontawesome/js/all.min.js"></script>
+    <script src="./scripts/more.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper1">
       <!-- Menu Bar -->
-      <div class="header">
+      <div class="header" id="header">
         <div>
           <ul class="nav justify-content-center container menu">
             <li class="nav-item menu__item">
               <i class="fas fa-home menu__item__icon"></i>
               
-              <a href="" class="nav-link">Home</a>
+              <a href="#header" class="nav-link">Home</a>
             </li>
             <!-- About -->
             <li class="nav-item menu__item">
               <i class="fas fa-user menu__item__icon"></i>
               
-              <a href="" class="nav-link">About</a>
+              <a href="#intro" class="nav-link">About</a>
             </li>
             <!-- Resumè -->
             <li class="nav-item menu__item">
               <i class="fas fa-file menu__item__icon"></i>
               
-              <a href="" class="nav-link">Resumè</a>
+              <a href="resume" class="nav-link">Resumè</a>
             </li>
             <!-- Skills -->
             <li class="nav-item menu__item">
               <i class="far fa-keyboard menu__item__icon"></i>
               
-              <a href="" class="nav-link">Skills</a>
+              <a href="#skills" class="nav-link">Skills</a>
             </li>
             <!-- Portfolio -->
             <li class="nav-item menu__item">
               <i class="fas fa-paint-brush menu__item__icon"></i>
               
-              <a href="" class="nav-link">Portfolio</a>
+              <a href="#portfolio" class="nav-link">Portfolio</a>
             </li>
             <!-- Contact -->
             <li class="nav-item menu__item">
               <i class="fas fa-envelope menu__item__icon"></i>
               
-              <a href="" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
       </div>
       <!-- Banner -->
-      <section class="banner">
+      <section class="banner" id="banner">
         <div class="banner__wrap">
           <div class="fade-in banner__wrap__text banner-text-1">Ricky Liew</div>
           <div class="fade-in banner__wrap__text banner-text-2">
@@ -76,52 +77,53 @@
       </section>
       <div class="wrapper2">
         <!-- Intro -->
-        <section class="intro">
+        <section class="intro" id="intro">
           <p>Hi! I'm Ricky! Nice to meet you.</p>
           <p>
             I started out in IT and made a change a while back. Now I'm a full
-            stack web developer and I love what I do.
+            stack web developer Working primarily with React and Python. 
+            I'm naturally curious and always working to improve my skills. 
           </p>
+          <p>And I love what I do.</p>
         </section>
 
         <div class="wrapper3">
           <!-- Skills -->
-          <section class="skills">
+          <section class="skills" id="skills">
             <div class="container">
               <div class="row">
-                <!-- Front-end -->
+                <!-- Coding -->
                 <div class="card col-sm skills__card">
                   <div class="skills__card__icon">
                     <i class="fas fa-code  "></i>
                   </div>
-                  <div class="skills__card__header">Front-end</div>
+                  <div class="skills__card__header">Languages</div>
                   <div class="skills__card__body">
-                    <p></p>
-                    <p>Language I speak:</p>
-
+                    
                     <ul>
                       <li>HTML</li>
                       <li>CSS</li>
-                      <li>SASS</li>
                       <li>JavaScript</li>
-                      <li>React</li>
-                      <li></li>
+                      <li>Python</li>
                     </ul>
+                    
                   </div>
                 </div>
-                <!-- Back-end -->
+                <!-- Frameworks -->
                 <div class="card col-sm skills__card">
                   
                   <div class="skills__card__icon">
-                    <i class="far fa-file-code"></i>
+                    <i class="fa fa-cogs"></i>
                   </div>
-                  <div class="skills__card__header">Back-end</div>
+                  <div class="skills__card__header">Frameworks</div>
                   <div class="skills__card__body">
-                    <p>Languages I speak:</p>
-
                     <ul>
-                      <li>Python</li>
+                      <li>SASS</li>
+                      <li>React</li>
+                      <li>Gatsby</li>
                       <li>Node</li>
+                      <li>Flask</li>
+                      <li>Django</li>
                       <li></li>
                     </ul>
                   </div>
@@ -133,12 +135,11 @@
                   </div>
                   <div class="skills__card__header">Tools</div>
                   <div class="skills__card__body">
-                    <p></p>
                     <ul>
                       <li>VS Code</li>
                       <li>Atom</li>
                       <li>Webpack</li>
-                      <li></li>
+                      <li>JsDoc</li>
                     </ul>
                   </div>
                 </div>
@@ -147,10 +148,77 @@
           </section>
         </div>
         <!-- Portfolio -->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <div class="portfolio__heading">Some of my Work</div>
           <!-- Portfolio Item -->
           <div class="project">
+            <div class="project__border"></div>
+            <div class="project__title">Resource Scheduler</div>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-5 project__img">
+                  <img
+                    src="./assets/images/portfolio/resourcescheduler.png"
+                    alt="Onboarding"
+                  />
+                </div>
+                <div class="col-sm-7 project__txt">
+                  <div class="showmore">
+                  <p>
+                    Resource Scheduler is an app for resource booking. 
+                    It designed to cater for more than one organisation.</p>
+
+                    
+                    <p>I came up with the idea for this project following a comment by a friend who 
+                      whished that there was an app available for reserving meeting rooms online. 
+                      I decided to learn Django and try to create a simple web application using what I learned.
+                    </p>
+                    <div class="more" style="display: none">
+                      <p>Features:
+                        <ul>
+                          <li>Users can create / edit organisations and resources</li>
+                          <li>Users can be assigned to organisations</li>
+                          <li>User views are filtered according to organisations they are linked to, and their resources</li>
+                          <li>When booking resources, reserved days and times are filtered out to avoid clashes</li>
+                        </ul>
+                      </p>
+                      <p>Notes on demo site:</p>
+                      <ul>
+                        <li>No permission filtering - All functionality is available</li>
+                        <li>The top menu are links to "admin" level pages - All bookings, users, resources and organisations are available here</li>
+                        <li>The "breadcrumb" menu are links to "user-level" pages - Bookings made by the user and resources available to them are available here</li>
+                      </ul>
+                    </div>
+                    <div class="dots">more...</div>
+                    
+                  </div>
+                  <div class="container project__txt__links">
+                    <div class="row">
+                      <div class="col project__txt__links__item">
+                        <i class="fas fa-globe"></i>
+                        <a href="https://gentle-gorge-64820.herokuapp.com/" target="_blank">Site</a>
+                      </div>
+                      <div class="col project__txt__links__item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/RCode-Blue/ResourceScheduler_Front" target="_blank">Repo (front)</a>
+                      </div>
+                      <div class="col project__txt__links__item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/RCode-Blue/ResourceScheduler_Back" target="_blank">Repo (back)</a>
+                      </div>
+                      <div class="col project__txt__links__item">
+                        <i class="far fa-play-circle"></i>
+                        <a href="https://youtu.be/crB_9eQvnKE" target="_blank">Demo</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item -->
+          <div class="project">
+            <div class="project__border"></div>
             <div class="project__title">Onboarding</div>
             <div class="container">
               <div class="row">
@@ -162,25 +230,63 @@
                 </div>
                 <div class="col-sm-7 project__txt">
                   <p>
-                    A web application for managing employee onboarding tasks
+                    Borne from a need to manage a growing business, Onboarding is an app created to manage onboarding tasks for new employees. 
+                    The application provides for the creation of individualised task templates to cater for different sites and job titles.
                   </p>
-                  <p>Made with:
+                  <p>
+                    Tasks can be created by managers, then assigned to templates and organised in a sequence. 
+                    New employees are assigned a template and an onboarding buddy. The new employee logs in and based on their account, 
+                    is able to view task templates assigned to them. When done, tasks are ticked off and the completion 
+                    date is then marked against it.
+                  </p>
+
+
+                  <div class="more more-less" style="display: none">
+
+                  <p>
+                    Features:
                     <ul>
-                      <li>React</li>
-                      <li>Flask</li>
-                      <li>OAuth</li>
+                      <li>Individual task creation with instructor name</li>
+                      <li>Tasks can be edited after creation</li>
+                      <li>Template creation with custom task sequencing</li>
+                      <li>Users are assigned task templates</li>
+                      <li>Once assigned a template, user tasks do not change even if the tasks definitions are edited</li>
                     </ul>
                   </p>
+                  <p>
+                    Demo site notes:
+                    <ul>
+                      <li>Webpage has been configured to automatically load a demo user with an existing profile</li>
+                      <li>It runs on a free Heroku dyno which goes to sleep when not used. 
+                        You may see an error message when first loading the webpage. Please wait a few minutes before loading again.</li>
+                      <li>No permission filtering. All pages are viewable with edit permissions</li>
+                    </ul>
+                  
+                  </p>
+                  
+                  </div>
+                  <div class="dots">more...</div>
+                  
+
+                  
                   <div class="container project__txt__links">
                     <div class="row">
-                      <div class="col">
+                      <div class="col project__txt__links__item">
                         <i class="fas fa-globe"></i>
-                        Site
+                        <a href="https://lit-harbor-79520.herokuapp.com/" target="_blank">Site</a>
                       </div>
-                      <div class="col"><i class="fab fa-github"></i>Repo (front)</div>
-                      <div class="col"><i class="fab fa-github"></i>Repo (back)</div>
-                      <div class="col"><i class="far fa-play-circle"></i>Demo</div>
-                      
+                      <div class="col project__txt__links__item">
+                        <i class="fab fa-github"></i>
+                        <a href=""  target="_blank">Repo (front)</a>
+                      </div>
+                      <div class="col project__txt__links__item">
+                        <i class="fab fa-github"></i>
+                        <a href=""  target="_blank">Repo (back)</a>
+                      </div>
+                      <div class="col project__txt__links__item">
+                        <i class="far fa-play-circle"></i>
+                        <a href=""  target="_blank">Demo</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -189,6 +295,7 @@
           </div>
           <!-- Portfolio Item -->
           <div class="project">
+            <div class="project__border"></div>
             <div class="project__title">Rebekah Price, Dietitian</div>
             <div class="container">
               <div class="row">
@@ -200,19 +307,20 @@
                 </div>
                 <div class="col-sm-7 project__txt">
                   <p>
-                    A mock webpage for a health care provider. Features scrolling images and a blog page.
+                    A mock webpage for a healthcare provider. Features scrolling images, maps and a blog site.
                   </p>
-                  <p>Made with:
-                    <ul>
-                      <li>SASS</li>
-                      <li>Gatsby</li>
-                      <li>Netlify</li>
-                    </ul>
+                  <p>Made with SASS and Gatsby.
                   </p>
                   <div class="container project__txt__links">
                     <div class="row">
-                      <div class="col">Site</div>
-                      <div class="col">Repo</div>
+                      <div class="col project__txt__links__item">
+                        <i class="fas fa-globe"></i>
+                        <a href="https://eloquent-newton-ea4ac9.netlify.app/" target="_blank">Site</a>
+                      </div>
+                      <div class="col project__txt__links__item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/RCode-Blue/rebekah-price-dietitian"  target="_blank">Repo</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -221,6 +329,7 @@
           </div>
           <!-- Portfolio Item -->
           <div class="project">
+            <div class="project__border"></div>
             <div class="project__title">Mars Tourism</div>
             <div class="container">
               <div class="row">
@@ -237,8 +346,14 @@
                   </p>
                   <div class="container project__txt__links">
                     <div class="row">
-                      <div class="col">Site</div>
-                      <div class="col">Repo</div>
+                      <div class="col project__txt__links__item">
+                        <i class="fas fa-globe"></i>
+                        <a href="https://visit-mars-dzjgy0e3b.now.sh/" target="_blank">Site</a>
+                      </div>
+                      <div class="col project__txt__links__item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/RCode-Blue/visit_mars"  target="_blank">Repo</a>
+                      </div>
                     </div>
                   </div>
                 </div>

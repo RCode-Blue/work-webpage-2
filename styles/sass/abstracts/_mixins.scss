@@ -1,0 +1,14 @@
+/*
+0      - 600px  : Mobile phone
+600px  - 900px  : Tablet
+900px  - 1200px : Tablet landscape
+1200px - 1800px : [Normal styles]
+1800px+         : Big desktop 
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px / 16px = 37.5em
+  }
+}
